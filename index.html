@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The Social Network</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <!-- Compiled and minified CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">The Social Network</a>
+                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="modal-trigger" href="#modal1"><i class="material-icons right">note_add</i>Add Post</a></li>
+                 </ul>
+            </div>
+        </nav>
+        <img id="loader" src="Ellipsis.gif" />
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+        <form>
+            <div class="modal-content">
+                <h4>Add a new post!</h4>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="name" type="text">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">title</i>
+                        <input id="title" type="text" >
+                        <label for="title">Title</label>
+                    </div>
+                    <div class="input-field col s12">                         
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="content" class="materialize-textarea"></textarea>
+                        <label for="content">Just Type...</label>
+                    </div>
+                    </div>            
+            </div>
+            <div class="modal-footer">
+                <a href="#!" id="postButton" class="modal-action waves-effect waves-green btn-flat">Post</a>
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+            </div>
+        </form>
+    </div>
+            
+        <div class="container new">
+            <span id="countPosts"></span>
+            <div id="posts">
+                <ul id="postsul">
+                    <h1> My Posts</h1>
+                </ul>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>    
+        <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

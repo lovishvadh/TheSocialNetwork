@@ -1,0 +1,50 @@
+body{
+    background-color: #EBE6E6;
+    z-index: 0;
+}
+#text{
+    color: rgba(108, 177, 177, 0.78);
+}
+#postButton{
+    float: right;
+}
+nav{
+    background-color: rgba(108, 177, 177, 0.78) !important;
+}
+#header{
+    padding: 10px;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+#post{
+    border: 1px solid rgba(108, 177, 177, 0.78);
+    margin-top: 20px;
+}
+#time{
+    float: right;
+}
+ul{
+    background-color: rgba(108, 177, 177, 0.78);
+    color: #ffffff;
+}
+#loader{
+    position: absolute;
+    z-index: 999999999 !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    display: none;
+}
+.blur{
+    filter: blur(4px);
+}
+#countPosts{
+    border: 1px solid rgba(108, 177, 177, 0.78);
+    padding: 5px;
+}
+.new{
+    margin-top: 50px !important;
+}

@@ -1,5 +1,5 @@
 body{
-    background-color: #EBE6E6;
+    background-color:#FFFFFF;
     z-index: 0;
 }
 #text{
@@ -9,7 +9,11 @@ body{
     float: right;
 }
 nav{
-    background-color: rgba(108, 177, 177, 0.78) !important;
+    background-color: #ffffff !important;
+    
+}
+nav .brand-logo {
+    color: #000000 !important;
 }
 #header{
     padding: 10px;
@@ -19,15 +23,24 @@ nav{
 }
 
 #post{
-    border: 1px solid rgba(108, 177, 177, 0.78);
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(194,186,194,1);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(194,186,194,1);
+    box-shadow: 0px 0px 10px 3px rgba(194,186,194,1);
     margin-top: 20px;
+    padding:10px;
+    border-radius: 5px; 
+}
+#post:hover{
+    -webkit-box-shadow: 0px 0px 18px 6px rgba(194,186,194,1);
+    -moz-box-shadow: 0px 0px 18px 6px rgba(194,186,194,1);
+    box-shadow: 0px 0px 18px 6px rgba(194,186,194,1);
 }
 #time{
     float: right;
 }
 ul{
-    background-color: rgba(108, 177, 177, 0.78);
-    color: #ffffff;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 #loader{
     position: absolute;
@@ -42,9 +55,17 @@ ul{
     filter: blur(4px);
 }
 #countPosts{
-    border: 1px solid rgba(108, 177, 177, 0.78);
+    border: 1px solid rgba(0, 0, 0, 0.78);
     padding: 5px;
 }
 .new{
     margin-top: 50px !important;
+}
+.modal-trigger{
+    background-color: #ffffff !important;
+    color: black;
+}
+.modal-trigger:hover{
+    background-color: #000000 !important;
+    color: #FFFFFF;
 }

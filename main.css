@@ -13,7 +13,7 @@ nav{
     
 }
 nav .brand-logo {
-    color: rgba(155,233,212,1) !important;
+    color: #90C4B5 !important;
 }
 #header{
     padding: 10px;
@@ -23,17 +23,17 @@ nav .brand-logo {
 }
 
 #post{
-    -webkit-box-shadow: 9px 7px 18px -1px rgba(155,233,212,1);
-    -moz-box-shadow: 9px 7px 18px -1px rgba(155,233,212,1);
-    box-shadow: 9px 7px 18px -1px rgba(155,233,212,1);
+    -webkit-box-shadow: 1px 2px 5px 3px rgba(144,196,181,1);
+    -moz-box-shadow: 1px 2px 5px 3px rgba(144,196,181,1);
+    box-shadow: 1px 2px 5px 3px rgba(144,196,181,1);
     margin-top: 20px;
     padding:10px;
     border-radius: 5px; 
 }
 #post:hover{
-    -webkit-box-shadow: 9px 7px 18px 6px rgba(155,233,212,1);
-    -moz-box-shadow: 9px 7px 18px 6px rgba(155,233,212,1);
-    box-shadow: 9px 7px 18px 6px rgba(155,233,212,1);
+    -webkit-box-shadow: 1px 2px 9px 7px rgba(144,196,181,1);
+    -moz-box-shadow: 1px 2px 9px 7px rgba(144,196,181,1);
+    box-shadow: 1px 2px 9px 7px rgba(144,196,181,1);
 }
 #time{
     float: right;

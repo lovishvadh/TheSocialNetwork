@@ -12,7 +12,7 @@ $(document).ready(() => {
       web3.eth.defaultAccount=web3.eth.accounts[0];
       
       var snContract = web3.eth.contract([{"constant":false,"inputs":[{"name":"i","type":"uint256"}],"name":"incrementLikes","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"writerActs","outputs":[{"name":"timestamp","type":"uint256"},{"name":"title","type":"string"},{"name":"content","type":"string"},{"name":"name","type":"string"},{"name":"writer","type":"address"},{"name":"likes","type":"uint256"},{"name":"dislikes","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"i","type":"uint256"}],"name":"getWriterActs","outputs":[{"name":"","type":"string"},{"name":"","type":"string"},{"name":"","type":"string"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"i","type":"uint256"}],"name":"incrementDislikes","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"i","type":"uint256"}],"name":"getdislikes","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"i","type":"uint256"}],"name":"getlikes","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"countPosts","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"title","type":"string"},{"name":"text","type":"string"},{"name":"name","type":"string"}],"name":"insertPost","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]);
-      var socialNetwork = snContract.at('0x211c9583b8218f321f0bd210ca164c45d91829c4');
+      var socialNetwork = snContract.at('0x0a3e6b43476a7391d4d76b7a1675f32414e2db89');
       var prevResponse = 0;
       //var writeracts = socialNetwork.getWriterActs(i);
       //var writeractsLen = writeracts.length;
@@ -54,12 +54,12 @@ $(document).ready(() => {
     $('body').on('click', 'button.upBtn', function() {
         var index = $(this).parent().attr('class');
         socialNetwork.incrementLikes(index);    
-        $(this).addClass('disabled');   
+        //$(this).addClass('disabled');   
     });
     $('body').on('click', 'button.dvBtn', function() {
         var index = $(this).parent().attr('class');
-        socialNetwork.incrementDislikes(index);  
-        $(this).addClass('disabled');       
+        socialNetwork.incrementDislikes(index);
+        //$(this).addClass('disabled'); 
     });
       setInterval(() => { socialNetwork.countPosts((err,response) => {
         var y = parseInt(response.c);

@@ -69,3 +69,23 @@ ul{
     background-color: rgba(155,233,212,1) !important;
     color: #FFFFFF;
 }
+#upVotes{
+    border:1px solid #6AAD9A;
+    border-radius: 100%;
+    padding: 5px;
+}
+#downVotes{
+    border:1px solid #6AAD9A;
+    border-radius: 100%;
+    padding: 5px;
+}
+.btn{
+    border-radius: 100% !important;
+    background-color: #6AAD9A !important;
+}
+.updiv{
+    float: left;
+}
+.downdiv{
+    float: right;
+}
